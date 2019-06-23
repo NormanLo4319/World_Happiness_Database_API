@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Happiness</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>World Happiness Project</h1>
+            <h3>By Norman Lo</h3>
+            <hr class="my-4">
+        </div>
+
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#api" role="button" aria-expanded="false" aria-controls="api">API Request Documentation</a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#region" aria-expanded="false" aria-controls="region">List of Region ID</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="api region">Both API & List of Region ID</button>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="api">
+                <div class="card card-body">
+                    <h4 class="card-title" style="font-weight:blod">JSON API Request:</h4>
+                    <p class="card-text">Happiness Data: "/api/happiness" </p>
+                    <p class="card-text">Gini Index Data: "/api/gini"</p>
+                    <p class="card-text">Demographic Data: "/api/demographic"</p>
+                    <p class="card-text">Geographic Data: "/api/geographic"</p>
+                    <p class="card-text">Grouped Data: "/api/grouped_data"</p>
+                    <p class="card-text">Data by Region: "/api/grouped_data/{Region ID}"</p>
+                    <p class="card-text">Explaining Happiness: "/api/happiness_explain"</p>
+                    <p class="card-text">Explaining Happiness by Country: "/api/happiness_explain/{Country Name}"</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="region">
+                <div class="card card-body">
+                    <ul style="list-style:none;"><h4>List of Region ID:</h4>
+                        <li>Region ID: <strong>"EAS"</strong> = East Asia and Pacific</li>
+                        <li>Region ID: <strong>"ECS"</strong> = Europe and Central Asia</li>
+                        <li>Region ID: <strong>"LCN"</strong> = Latin America & the Caribbean</li>
+                        <li>Region ID: <strong>"MEA"</strong> = Middle East and North Africa</li>
+                        <li>Region ID: <strong>"NAC"</strong> = North America</li>
+                        <li>Region ID: <strong>"SAS"</strong> = South Asia</li>
+                        <li>Region ID: <strong>"SSF"</strong> = Sub-Saharan Africa</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </p>
+        
+        <div class="col-lg-12">
+            <ul style="list-style:none; font-weight:bold">
+                <h1>Happiness Rank:</h1>
+                {% for i in data %}
+                    <li style="color:rgb(51, 64, 66)"> 
+                    {{ i.country }} [{{ i. year }}]: {{ i.happiness }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

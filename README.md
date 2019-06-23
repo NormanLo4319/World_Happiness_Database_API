@@ -19,5 +19,7 @@ Using Python Pandas for data extraction and cleaning process.
 Using SQLAlchemy to create and store cleaned data into SQLite database.
 ### Stage 3: Create Application 
 Using Flask to create application connect to the SQLite database and return to the API request with json format data.
-### State 4: Create Database Dashboard
+### Stage 4: Create Database Dashboard
 Create a simple home page dashboard for the API request by html and css.
+### Stage 5: Deploying the Application
+Using Heroku to deploy the web application from Github.

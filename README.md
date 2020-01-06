@@ -1,4 +1,4 @@
-# World_Happiness_Database_API
+# World Happiness Database API
 World Happiness Database API (Backend)
 Final Product: https://world-happiness-database.herokuapp.com
 

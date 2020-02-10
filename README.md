@@ -3,7 +3,7 @@ World Happiness Database API (Backend)
 Final Product: https://world-happiness-database.herokuapp.com
 
 ## Objective:
-This project is to create a web API for requesting country level data on several aggregate variables, such as Happiness Scores, Gini Coefficient, GDP, population, GDP per Capita, and geographic location (lat & lon).  
+This project is designed to create a web API for requesting country level data on several aggregate variables, such as Happiness Scores, Gini Coefficient, GDP, population, GDP per Capita, and geographic location (lat & lon).  
 
 ## Data:
 The data was collected from different sources and it was cleaned in Python before storing to SQLite database.

@@ -31,5 +31,5 @@ Starting Page:
 API Documentation Page:
 ![api request](images/api_request.png)
 
-Return JSON from Request:
+Return JSON from Request: <br />
 ![json return](images/json_return.png)

@@ -25,5 +25,11 @@ Creating a simple home page dashboard for the API request by html and css.
 Deploying the web application from Github to Heroku.
 
 ## Final Product:
-Start Page:
+Starting Page:
 ![starting page](images/starting_page.png)
+
+API Documentation Page:
+![api request](images/api_request.png)
+
+Return JSON from Request:
+![json return](images/json_return.png)

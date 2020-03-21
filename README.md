@@ -22,7 +22,7 @@ Using Flask creates application connect to the SQLite database and returns to th
 ### Stage 4: Create Database Dashboard
 Creating a simple home page dashboard for the API request by html and css.
 ### Stage 5: Deploying the Application
-Deploying the web application from Github to Heroku.
+Deploying the web application on Heroku.
 
 ## Final Product:
 Starting Page:

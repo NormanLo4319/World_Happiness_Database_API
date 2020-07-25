@@ -33,3 +33,5 @@ API Documentation Page:
 
 Return JSON from Request: <br />
 ![json return](images/json_return.png)
+
+Copyright © 2020 Norman Lo
